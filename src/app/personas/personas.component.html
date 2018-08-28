@@ -1,0 +1,19 @@
+<h2>Personas</h2>
+<ul class="personas">
+  <li *ngFor="let persona of personas">
+    <a routerLink="/detail/{{persona.id}}">
+      <span class="badge">{{persona.id}}</span> {{persona.name}}
+    </a>
+  </li>
+</ul>
+<!--
+<div *ngIf="selectedPersona">
+    <h2>{{selectedPersona.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{selectedPersona.id}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="selectedPersona.name" placeholder="name">
+      </label>
+    </div>
+    </div> 
+    -->
